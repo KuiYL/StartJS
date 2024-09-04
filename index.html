@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="assets/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #square {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: background-color 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="submit" onclick="printHello()">Привет</button>
+
+    <input type="text" id="myInput" placeholder="Ваш текст здесь" />
+    <button id="myButton">Заполнить</button>
+
+    <input type="text" id="inputEmptyOrNot" placeholder="Введите текст" />
+    <button id="buttonEmptyOrNot">Проверить ввод</button>
+
+    <input type="text" id="inputBlock" placeholder="Введите текст" />
+    <button onclick="disableInput()">Заблокировать</button>
+    <button onclick="enableInput()">Разблокировать</button>
+
+    <div id="square"></div>
+    <button onclick="toggleSquare()">Скрыть квадрат</button>
+
+  </body>
+</html>
