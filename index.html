@@ -7,64 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      #square {
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        transition: background-color 0.3s;
+      form.form-example {
+        display: table;
+      }
+
+      div.form-example {
+        display: table-row;
+      }
+
+      label,
+      input {
+        display: table-cell;
+        margin-bottom: 10px;
+      }
+
+      label {
+        padding-right: 10px;
       }
     </style>
   </head>
   <body>
-    <!-- <div id="square"></div>
-    <div id="result"></div> -->
-    <h2>Задание 1</h2>
-    <button type="button" id="buttonHello">Нажми на меня</button>
-    <div id="helloText"></div>
-
-    <h2>Задание 2</h2>
-    <input type="text" id="inputTextEnter" />
-    <div id="textEnter"></div>
-
-    <h2>Задание 3</h2>
-    <div id="buttons" style="display: flex; flex-direction: row; justify-content: space-between;">
-      <button type="button" id="buttonTextOne">Нажми на меня</button>
-      <button type="button" id="buttonTextTwo">Нажми на меня</button>
-    </div>
-    <div id="textButtons"></div>
-
-    <h2>Задание 4</h2>
-    <div id="backColor" style="background-color: brown; width: 100px; height: 100px;"></div>
-
-    <h2>Задание 5</h2>
-    <div id="buttons" style="display: flex; flex-direction: row; justify-content: space-between;">
-      <button type="button" id="buttonDescOne">Подробнее</button>
-      <button type="button" id="buttonDescTwo">Скрыть</button>
-    </div>
-    <div id="descript"></div>
-
-    <h2>Задание 6</h2>
-    <input type="text" id="inputFocus">
-
-    <h2>Задание 7</h2>
-    <button type="button" id="buttonDoubleClick">Нажми на меня</button>
-    <div  id="inputDoubleClick"></div>
-
-    <h2>Задание 8</h2>
-    <a href="№" id="linkColor">Ссылка</a>
-
-    <h2>Задание 9</h2>
-    <div id="buttons" style="display: flex; flex-direction: row; justify-content: space-between;">
-      <button type="button" id="buttonAnimOne" style="width: 100px;
-      height: 100px;
-      transition: background-color 0.3s;">Увеличить</button>
-      <button type="button" id="buttonAnimTwo" style="width: 100px;
-      height: 100px;
-      transition: background-color 0.3s;">Уменьшить</button>
-    </div>
-
-    <h2>Задание 10</h2>
-
-
+    <form class="form-example" id="form">
+      <div class="form-example">
+        <label for="name">Введите имя пользователя: </label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div class="form-example">
+        <label for="text">Введите логин пользователя: </label>
+        <input type="login" name="login" id="login" />
+      </div>
+      <div class="form-example">
+        <label for="age">Введите возраст: </label>
+        <input type="number" name="age" id="age" />
+      </div>
+      <div class="form-example">
+        <input type="submit" id="buttonForm"/>
+      </div>
+    </form>
   </body>
-</html> 
+</html>
